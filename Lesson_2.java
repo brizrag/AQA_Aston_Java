@@ -1,5 +1,12 @@
 public class Lesson_2 {
 
+    public static void main(String[] args) {
+        printThreeWorld();
+        checkSumSign();
+        printColor();
+        compareNumbers();
+    }
+
     public static void printThreeWorld() {
         System.out.println("Orange");
         System.out.println("Banana");
@@ -13,7 +20,7 @@ public class Lesson_2 {
         if (sym > 0) {
             System.out.println("Сумма положительная");
         } else {
-            System.out.println(("Сумма отрицательная"));
+            System.out.println("Сумма отрицательная");
         }
     }
 
@@ -41,12 +48,7 @@ public class Lesson_2 {
         }
     }
 
-    public static void main(String[] args) {
-        printThreeWorld();
-        checkSumSign();
-        printColor();
-        compareNumbers();
-    }
+
 }
 
 
