@@ -1,34 +1,27 @@
 class Lesson_3 {
 
     public static void main(String[] args) {
-        falseTrue();
-        numberSing();
-        singFalseTrue();
+        falseTrue(10, 2);
+        numberSing(-10);
+        positiveFalseTrue(-10);
         stringS();
-        leapУear();
+        leapУear(1780);
         arrayNumber();
         arrayNull();
         arrayTwo();
         twoArray();
-        argument();
+        argument(10, 1);
 
     }
 
 
-
-    private static boolean falseTrue() {
-        int x = 10;
-        int y = 6;
-        boolean symm = 10 <= (x + y) && (x + y) <= 20;
-        if (symm) {
-            return true;
-        } else {
-            return false;
+    private static boolean falseTrue(int x, int y) {
+        {
+            return ((10 <= (x + y)) && ((x + y) <= 20));
         }
     }
 
-    private static void numberSing() {
-        int i = -10;
+    private static void numberSing(int i) {
         if (i < 0) {
             System.out.println("Число отрицательное");
         } else {
@@ -36,12 +29,9 @@ class Lesson_3 {
         }
     }
 
-    private static boolean singFalseTrue() {
-        int x = 10;
-        if (x < 0 || x > 0) {
-            return true;
-        } else {
-            return false;
+    private static boolean positiveFalseTrue(int a) {
+        {
+            return (a < 0);
         }
     }
 
@@ -54,13 +44,9 @@ class Lesson_3 {
         }
     }
 
-    private static boolean leapУear() {
-        int year = 1600;
-        boolean leap = (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
-        if (leap) {
-            return true;
-        } else {
-            return false;
+    private static boolean leapУear(int year) {
+        {
+            return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
         }
     }
 
@@ -85,9 +71,9 @@ class Lesson_3 {
         int[] arr = new int[100];
         for (int i = 0; i < 100; i++) {
             arr[i] = i;
-              System.out.println(arr[i]);
-            }
+            System.out.println(arr[i]);
         }
+    }
 
 
     private static void arrayTwo() {
@@ -113,9 +99,7 @@ class Lesson_3 {
         }
     }
 
-    private static void argument() {
-        int len = 10;
-        int initialValue = 1;
+    private static void argument(int len, int initialValue) {
         int[] arr = new int[len];
         for (int i = 0; i < len; i++) {
             arr[i] = initialValue;
