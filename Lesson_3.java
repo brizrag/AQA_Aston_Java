@@ -15,8 +15,9 @@ class Lesson_3 {
     }
 
 
-    private static void falseTrue(int x, int y) {
+    private static boolean falseTrue(int x, int y) {
         {
+            return ((10 <= (x + y)) && ((x + y) <= 20));
         }
     }
 
@@ -28,8 +29,9 @@ class Lesson_3 {
         }
     }
 
-    private static void positiveFalseTrue(int a) {
+    private static boolean positiveFalseTrue(int a) {
         {
+            return (a < 0);
         }
     }
 
@@ -42,8 +44,9 @@ class Lesson_3 {
         }
     }
 
-    private static void leapУear(int year) {
+    private static boolean leapУear(int year) {
         {
+            return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
         }
     }
 
